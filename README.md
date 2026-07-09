@@ -29,6 +29,21 @@ Changes made through a management API or UI reach every running instance of your
 
 ---
 
+## Installation
+
+Requires **Go 1.25+**.
+
+```bash
+go get github.com/lepek/liveconfig@v0.1.0
+
+# only if you need the Postgres-backed store:
+go get github.com/lepek/liveconfig/pgstore@v0.1.0
+```
+
+The core module has zero external dependencies. Because `testcontainers` is only a test dependency of `pgstore`, projects that import `pgstore` pull in just `pgx/v5` and its dependencies.
+
+---
+
 ## Quick start
 
 ### 1. Tag your config struct

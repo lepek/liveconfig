@@ -1,0 +1,13 @@
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+
+# Go workspace files (local dev only)
+go.work
+go.work.sum
+
+# Test & build artifacts
+*.test
+*.out
+coverage.out
