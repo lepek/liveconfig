@@ -2,14 +2,9 @@ module github.com/lepek/liveconfig/pgstore
 
 go 1.25.0
 
-// liveconfig has not been published yet, so resolve the local copy from the
-// parent directory. When the library is published, drop this replace and
-// pin a real version of github.com/lepek/liveconfig below.
-replace github.com/lepek/liveconfig => ../
-
 require (
 	github.com/jackc/pgx/v5 v5.9.2
-	github.com/lepek/liveconfig v0.0.0
+	github.com/lepek/liveconfig v0.1.0
 	github.com/testcontainers/testcontainers-go/modules/postgres v0.42.0
 )
 
